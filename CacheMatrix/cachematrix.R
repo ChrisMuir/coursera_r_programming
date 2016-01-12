@@ -5,7 +5,7 @@
 
 ## makeCacheMatrix creates the cache matrix object, and sets up a list of user commands.
 ## Once the function is run in R, here is an example of the commands to seed the cache:
-## a <- makecacheMatrix()
+## a <- makeCacheMatrix()
 ## x <- matrix(1:4, 2, 2)
 ## a$set(x)
 
@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cacheSolve calculates the inverse of the matrix created by function makecacheMatrix. 
 ## Although, prior to this calculation, it looks to see if the matrix inversion has
 ## previously been calculated.  If so, it returns the output saved in the cache and does
-## NOT perform the inversion computation.  If the requested inversion has been stored in 
+## NOT perform the inversion computation.  If the requested inversion has NOT been stored in 
 ## the cache, the function will calculate the matrix inversion and record the value of the
 ## inversion calculation in the cache by way of the setinverse function.
 
